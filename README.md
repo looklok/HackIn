@@ -1,16 +1,22 @@
 # funny_app
 
-A new Flutter application.
+During a certain period of time, people face stress and anxiety more than usual. One of such periods is college life. 
+college can be very stressful. Students spend most of their time balancing between classes, projects, tests, final exams, personal life, and work; and this is enough to make anyone feel overwhelmed. Besides, this stress can cause multiples problems, not just emotional, but physicals as well.
+app-namehere, an app that can be very helpful in such cases. In fact, it is a mixture of an agenda, mood tracker,anxiety helper, mood-boosting companion, all in one, it is so friendly and caring that it will be here to motivate you, remind you to achieve your daily goals, and warn you if needed. You just need to answer few questions and it will help you build confidence, reduce self-doubt and improve your self-esteem.
 
-## Getting Started
+# functionalities
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+<img align="right" src="https://github.com/looklok/HackIn/blob/master/imaages/Samsung%20Galaxy%20S10%20HackIN.png" height="250">
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 1.Register first!
+
+
+## 2.Track your mood!
+
+
+## 3.Your next days at a glance.
+
+
+## 4.Friendly reminders, warnings and motivational quotes.
