@@ -1,4 +1,4 @@
-# funny_app
+# Unimate
 
 <img align="right" src="https://github.com/looklok/HackIn/blob/master/imaages/unimate.png" height="360">
 
