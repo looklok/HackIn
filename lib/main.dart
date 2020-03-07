@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:funny_app/StoryDetailScreen.dart';
 import 'package:funny_app/data.dart';
 import 'package:feather_icons_flutter/feather_icons_flutter.dart';
 import 'dart:math';
+import 'package:firebase_messaging/firebase_messaging.dart';
+
 const color1 = Color(0xFFFFC77B);
 const color2 = Color(0xFFFF9CA5);
 var lightGrey = Color(0xfff5f5f5);
@@ -172,7 +175,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           blurRadius: 8)
                     ],
                   ),
-                  child: IconButton(icon: Icon(FeatherIcons.menu, color: color2,),iconSize: 32,color: Color(0xFFFEAC5E),padding: EdgeInsets.all(12), ),
+                  child: IconButton(
+                    icon: Icon(FeatherIcons.menu, color: color2,),iconSize: 32,color: Color(0xFFFEAC5E),padding: EdgeInsets.all(12), ),
                 ),
                 Container(
 
@@ -186,7 +190,15 @@ class _MyHomePageState extends State<MyHomePage> {
                           blurRadius: 8)
                     ],
                   ),
-                  child: IconButton(icon: Icon(FeatherIcons.edit, color: color2,),iconSize: 32,color: Color(0xFFFEAC5E), padding: EdgeInsets.all(12),),
+                  child: Hero(
+                      tag: stories[currentPage.floor()],
+                      child: IconButton(
+                        onPressed: () {
+                          print('heyyyy');
+                          Navigator.push(
+                              context, MaterialPageRoute(builder: (context) => StoryDetailScreen(story: stories[currentPage.floor()],)));
+                        },
+                        icon: Icon(FeatherIcons.edit, color: color2,),iconSize: 32,color: Color(0xFFFEAC5E), padding: EdgeInsets.all(12),)),
                 )
               ],
             ),
@@ -211,8 +223,9 @@ class CardScrollWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new AspectRatio(
+    return  AspectRatio(
       aspectRatio: widgetAspectRatio,
+
       child: LayoutBuilder(builder: (context, contraints) {
         var width = contraints.maxWidth;
         var height = contraints.maxHeight;

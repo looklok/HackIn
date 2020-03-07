@@ -12,7 +12,7 @@ List<Story> stories = [
     image : 'assets/images/image2.jpg',
   ),
   Story(
-      title : 'random day',
+      title : 'First day of the semester',
       date : '2020-09-02',
       image : 'assets/images/image3.jpg'
   ),
