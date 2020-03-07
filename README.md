@@ -9,9 +9,6 @@ app-namehere, an app that can be very helpful in such cases. In fact, it is a mi
 # functionalities
 
 
-<img align="right" src="https://github.com/looklok/HackIn/blob/master/imaages/Samsung%20Galaxy%20S10%20HackIN.png" height="250">
-
-
 ## 1.Register first!
 
 
